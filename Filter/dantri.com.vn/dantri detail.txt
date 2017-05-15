@@ -1,0 +1,27 @@
+BEGIN HEADER
+source:http://dantri.com.vn/c23/s157-437743/am-thuc-nhat-mon-an-mua-thu.htm
+CRto:1
+
+BEGIN INFORMATION
+
+BEGIN ACTION
+startafter:
+<div class="container">|
+endat:
+<div class="footer box19">|
+pattern:
+ <div class="fon31 mt1">$1</div>
+ <div class="fon33 mt1">$2<div class="emailprint">|
+
+definition:
+$1:SHORT:TEXT:StripHTMLTags()
+$2:DETAIL:TEXT:Replace((Dân trí) - ,)
+
+BEGIN DO
+
+nntitle=Dan Tri Detail
+nntype=detail
+nnunique=100041
+nntrack=20101201
+nntop=
+nnbot=

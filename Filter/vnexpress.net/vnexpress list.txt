@@ -1,0 +1,37 @@
+BEGIN HEADER
+source:http://vnexpress.net/GL/Xa-hoi/
+CRto:1
+
+BEGIN INFORMATION
+
+BEGIN ACTION
+startafter:
+<div class="folder-top">|
+endat:
+<div id="footer">|
+pattern:
+<div class="folder-news">$1<p><a href="$2" class="link-title">$3</a>$4</label></p>
+<p>$5</p>
+</div>|
+
+<div class="folder-news">
+.*?<a href=".*?"><img class=".*?" src="(?<ImagePath>[^"<]+)?".*?/></a>
+.*?<p><a href="(?<Link>[^"<]+)?" class="link-title">(?<Title>[^"<]+)</a>.*?</label></p>
+.*?<p>(?<Teaser>.*?)</p>.*?
+</div>
+
+definition:
+$1:SHORT:TEXT:StripHTMLTags(<img>)
+$2:DETAIL:TEXT:StripHTMLTags()
+$3:TITLE:TEXT:StripHTMLTags()
+$4:MORE1:TEXT:StripHTMLTags()
+$5:SHORT:TEXT:StripHTMLTags()
+
+BEGIN DO
+
+nntitle=VNExpress list
+nntype=list
+nnunique=100030
+nntrack=20110201
+nntop=
+nnbot=

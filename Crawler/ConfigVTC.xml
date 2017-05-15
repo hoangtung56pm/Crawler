@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main>
+	<!--Giai trí - categoryId = 5-->
+  <!--Am Nhac - categoryId = 1-->
+  <data>
+    <Page>vtc.vn</Page>
+    <Source>http://vtc.vn/xa-hoi/</Source>
+    <CategoryID>105</CategoryID>
+    <HttpPrefix>http://vtc.vn</HttpPrefix>
+    <ListStartAfter>
+      <![CDATA[<div class="phantrai">.*]]>
+    </ListStartAfter>
+    <ListEndAt>
+      <![CDATA[<div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_pnlOtherNews">.*]]>
+    </ListEndAt>
+    <ParternList>
+      <![CDATA[<div class="p2_tinchinh">.*?<a href="(?<Link>.*?)".*?>(?<ImagePath>.*?)</a>.*?<a.*?>(?<Title>.*?)</a>.*?<ul class="p2_listchuyenmucphu".*?>.*?<li><a>(?<PubDate>.*?)</a>.*?</li>.*?</ul>.*?<div>.*?<div class="Summary_home">.*?<a.*?>.*?<div>(?<Teaser>.*?)</div>.*?</a>.*?</div>.*?</div>.*?<div class="clear">.*?</div>.*?</div>]]>
+    </ParternList>
+    <DetailStartAfter>
+      <![CDATA[<div class="phantrai">.*]]>
+    </DetailStartAfter>
+    <DetailEndAt>
+      <![CDATA[<div.*?id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_DivTags">.*]]>
+    </DetailEndAt>
+    <PatternDetail>
+      <![CDATA[//*[@id="abody"]]]>
+    </PatternDetail>
+    <LinkCommonPartern>
+      <![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+    </LinkCommonPartern>
+  </data>
+	<!--Thế giới - categoryId = 8-->
+	<data>
+		<Page>vtc.vn</Page>
+		<Source>http://vtc.vn/311-0/quoc-te/index.htm</Source>
+		<CategoryID>8</CategoryID>
+		<HttpPrefix>http://vtc.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="newsList">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_pnlOtherNews">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="newsItems">(?<ImagePath>.*?)<h2.*?>.*?<a.*?href=["|'](?<Link>[^"<]+)?["|'].*?>(?<Teaser>.*?)</a>.*?</h2>.*?<div class="desc">(?<Teaser>.*?)</div>.*?<div style="clear: both">.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="mainColsItem mainColsL">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="mainColsItem mainColsC">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<span class="date">(?<PubDate>.*?)</span>.*?<div.*?id="pageContent".*?>(?<ContentBody>.*?)</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Pháp luật - categoryId = 9-->
+	<data>
+		<Page>vtc.vn</Page>
+		<Source>http://vtc.vn/7-0/phap-luat/index.htm</Source>
+		<CategoryID>9</CategoryID>
+		<HttpPrefix>http://vtc.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="newsList">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_pnlOtherNews">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="newsItems">(?<ImagePath>.*?)<h2.*?>.*?<a.*?href=["|'](?<Link>[^"<]+)?["|'].*?>(?<Teaser>.*?)</a>.*?</h2>.*?<div class="desc">(?<Teaser>.*?)</div>.*?<div style="clear: both">.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="mainColsItem mainColsL">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="mainColsItem mainColsC">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<span class="date">(?<PubDate>.*?)</span>.*?<div.*?id="pageContent".*?>(?<ContentBody>.*?)</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Giao duc - categoryId = 10-->
+	<data>
+		<Page>vtc.vn</Page>
+		<Source>http://vtc.vn/giaoduc/539-0/tin-tuc-su-kien/index.htm</Source>
+		<CategoryID>10</CategoryID>
+		<HttpPrefix>http://vtc.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="newsList">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_pnlOtherNews">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="newsItems">(?<ImagePath>.*?)<h2.*?>.*?<a.*?href=["|'](?<Link>[^"<]+)?["|'].*?>(?<Teaser>.*?)</a>.*?</h2>.*?<div class="desc">(?<Teaser>.*?)</div>.*?<div style="clear: both">.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="mainColsItem mainColsL">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="mainColsItem mainColsC">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<span class="date">(?<PubDate>.*?)</span>.*?<div.*?id="pageContent".*?>(?<ContentBody>.*?)</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<data>
+		<Page>vtc.vn</Page>
+		<Source>http://vtc.vn/giaoduc/541-0/the-gioi-du-hoc/index.htm</Source>
+		<CategoryID>10</CategoryID>
+		<HttpPrefix>http://vtc.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="newsList">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_pnlOtherNews">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="newsItems">(?<ImagePath>.*?)<h2.*?>.*?<a.*?href=["|'](?<Link>[^"<]+)?["|'].*?>(?<Teaser>.*?)</a>.*?</h2>.*?<div class="desc">(?<Teaser>.*?)</div>.*?<div style="clear: both">.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="mainColsItem mainColsL">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="mainColsItem mainColsC">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<span class="date">(?<PubDate>.*?)</span>.*?<div.*?id="pageContent".*?>(?<ContentBody>.*?)</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<data>
+		<Page>vtc.vn</Page>
+		<Source>http://vtc.vn/giaoduc/543-0/chuyen-hoc-duong/index.htm</Source>
+		<CategoryID>10</CategoryID>
+		<HttpPrefix>http://vtc.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="newsList">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_pnlOtherNews">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="newsItems">(?<ImagePath>.*?)<h2.*?>.*?<a.*?href=["|'](?<Link>[^"<]+)?["|'].*?>(?<Teaser>.*?)</a>.*?</h2>.*?<div class="desc">(?<Teaser>.*?)</div>.*?<div style="clear: both">.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="mainColsItem mainColsL">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="mainColsItem mainColsC">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<span class="date">(?<PubDate>.*?)</span>.*?<div.*?id="pageContent".*?>(?<ContentBody>.*?)</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<data>
+		<Page>vtc.vn</Page>
+		<Source>http://vtc.vn/giaoduc/542-0/goc-nhin/index.htm</Source>
+		<CategoryID>10</CategoryID>
+		<HttpPrefix>http://vtc.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="newsList">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_pnlOtherNews">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="newsItems">(?<ImagePath>.*?)<h2.*?>.*?<a.*?href=["|'](?<Link>[^"<]+)?["|'].*?>(?<Teaser>.*?)</a>.*?</h2>.*?<div class="desc">(?<Teaser>.*?)</div>.*?<div style="clear: both">.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="mainColsItem mainColsL">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="mainColsItem mainColsC">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<span class="date">(?<PubDate>.*?)</span>.*?<div.*?id="pageContent".*?>(?<ContentBody>.*?)</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+</main>

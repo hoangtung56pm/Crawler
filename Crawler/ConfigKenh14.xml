@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main>
+	<!--Am Nhac - categoryId = 1-->
+	<data>
+		<Page>kenh14.vn</Page>
+		<Source>http://kenh14.vn/am-nhac.chn</Source>
+		<CategoryID>1</CategoryID>
+		<HttpPrefix>http://kenh14.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="newslistpannel">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="pagercontainer clearfix">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<li class="item .*? clearfix">.*?<div class="img ">.*?<a.*?href="(?<Link>.*?)">.*?<img class="avatar".*?src="(?<ImagePath>.*?)" />.*?<span class="icon">.*?</span>.*?</a>.*?</div>.*?<div class="postcontent"><div class="subtitle fl"></div><div title=".*?" class="meta">(?<PubDate>.*?)</div>.*?<h4 class="title">.*?<a href=".*?">(?<Title>.*?)</a>.*?</h4>.*?<div class="sapo">(?<Teaser>.*?)</div>.*?<ul>.*?</ul>.*?</div>.*?</li>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="postpadding">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="post-share">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="meta">.*?<span class="date">(?<PubDate>.*?)</span>.*?</div>.*?<h2 class="sapo">(?<Teaser>.*?)</h2>.*?<div class="content">(?<ContentBody>.*?)</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<data>
+		<Page>kenh14.vn</Page>
+		<Source>http://kenh14.vn/ngoi-sao.chn</Source>
+		<CategoryID>1</CategoryID>
+		<HttpPrefix>http://kenh14.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="listnews">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[div class="pagercontainer clearfix">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="item clearfix">.*?<div class="meta">(?<PubDate>.*?)</div>.*?<div class="img">(?<ImagePath>.*?)</div>.*?<div class="postcontent">.*?<div class="title"><a href=["|'](?<Link>[^"<]+)?["|']>(?<Title>.*?)</a></div>.*?<div class="sapo">(?<Teaser>.*?)<img.*?></div>.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="postpadding">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="post-share">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="meta">(?<PubDate>.*?)</div>.*?<p class="sapo">(?<Teaser>.*?)</p>.*?<div class="content">(?<ContentBody>.*?)</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+</main>

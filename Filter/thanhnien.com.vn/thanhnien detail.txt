@@ -1,0 +1,30 @@
+BEGIN HEADER
+source:http://www.thanhnien.com.vn/news/Pages/201033/20100812114010.aspx
+CRto:1
+
+BEGIN INFORMATION
+
+BEGIN ACTION
+startafter:
+<div class="left-left-content">|
+endat:
+<div class="bottom-cntent-div">|
+pattern:
+<div class="pageImgCont">$1<div class="article-Des-Cont">$2<p align=right>$3</p>
+ 
+						</div>
+						<div>|
+
+definition:
+$1:DETAIL:StripHTMLTags(<img>)
+$2:DETAIL:TEXT:Replace((TNO) ,)
+$3:MORE:TEXT
+
+BEGIN DO
+
+nntitle=Thanh Nien detail
+nntype=detail
+nnunique=100081
+nntrack=20101201
+nntop=
+nnbot=

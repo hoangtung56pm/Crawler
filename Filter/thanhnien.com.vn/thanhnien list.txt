@@ -1,0 +1,28 @@
+BEGIN HEADER
+source:http://www.thanhnien.com.vn/pages/Kinh-te.aspx
+CRto:1
+
+BEGIN INFORMATION
+
+BEGIN ACTION
+startafter:
+<div class="left-news-content">|
+endat:
+<div class="mid-news-content">|
+pattern:
+<div class='cm-content'><div class='cm-subtitle'></div><div class='cm-contentitem'><div class='cm-title'><a href=$1>$2</a></div>   <div class='cm-imageroll'>$3</div>   <div class='cm-des' >$4</div></div><div class='cm-link'> Chi tiết... </div></div>|
+
+definition:
+$1:DETAIL:TEXT:StripHTMLTags()
+$2:TITLE:TEXT:StripHTMLTags()
+$3:SHORT:TEXT:StripHTMLTags(<img>)
+$4:SHORT:TEXT:StripHTMLTags():Replace((TNO) ,)
+
+BEGIN DO
+
+nntitle=Thanh Nien list
+nntype=list
+nnunique=100080
+nntrack=20101201
+nntop=
+nnbot=

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main>
+	<!--Kinh te - categoryId = 6-->
+	<data>
+		<Page>plo.vn</Page>
+		<Source>http://plo.vn/quan-ly-thi-truong-14.html</Source>
+		<CategoryID>105</CategoryID>
+		<HttpPrefix>http://plo.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="main-contents">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="sidebar">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="story">.*?<p class="thumb">.*?<a href=".*?" title=".*?" target=".*?"><img src="(?<ImagePath>.*?)" width=".*?" height=".*?" alt=".*?" />.*?</a>.*?</p>.*?<p class="title">.*?<a href="(?<Link>[^"<]+)?" title=".*?" target="">(?<Title>.*?)</a>.*?</p>.*?<p class="meta">.*?</p>.*?<p class="summary">(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="main-contents">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="sidebar">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="article-header">.*?<p class="meta">(?<PubDate>.*?)</p>.*?<ul.*?>.*?</ul>.*?</div>.*?<div.*?id="abody".*?>(?<ContentBody>.*?)<p class="source">]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Chính trị và xã hội - categoryId = 7-->
+	<data>
+		<Page>phapluattp.vn</Page>
+		<Source>http://phapluattp.vn/p0c1015/xa-hoi.htm</Source>
+		<CategoryID>7</CategoryID>
+		<HttpPrefix>http://phapluattp.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="fl w472 box1 mt1">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="fl ml1 w322 mt1">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="box1. fl">(?<ImagePath>.*?)<a class="fon4" href="(?<Link>[^"<]+)?".*?>(?<Teaser>.*?)</a>.*?<div class="fon9 mt1">(?<Teaser>.*?)</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="fl w472">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="box1 mt1">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="mt1 ml2 mr2 pt1 pb1">.*?<p class="detail_time" align="right">(?<PubDate>.*?)</p>.*?<div.*?id="contentdetail">(?<ContentBody>.*?)</div>.*?</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Thế giới - categoryId = 8-->
+	<data>
+		<Page>phapluattp.vn</Page>
+		<Source>http://phapluattp.vn/p0c1017/the-gioi.htm</Source>
+		<CategoryID>8</CategoryID>
+		<HttpPrefix>http://phapluattp.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="fl w472 box1 mt1">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="fl ml1 w322 mt1">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="box1. fl">(?<ImagePath>.*?)<a class="fon4" href="(?<Link>[^"<]+)?".*?>(?<Teaser>.*?)</a>.*?<div class="fon9 mt1">(?<Teaser>.*?)</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="fl w472">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="box1 mt1">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="mt1 ml2 mr2 pt1 pb1">.*?<p class="detail_time" align="right">(?<PubDate>.*?)</p>.*?<div.*?id="contentdetail">(?<ContentBody>.*?)</div>.*?</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Pháp luật - categoryId = 9-->
+	<data>
+		<Page>phapluattp.vn</Page>
+		<Source>http://phapluattp.vn/p1015c1074/an-ninh-trat-tu.htm</Source>
+		<CategoryID>9</CategoryID>
+		<HttpPrefix>http://phapluattp.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="fl w472 box1 mt1">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="fl ml1 w322 mt1">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="box1. fl">(?<ImagePath>.*?)<a class="fon4" href="(?<Link>[^"<]+)?".*?>(?<Teaser>.*?)</a>.*?<div class="fon9 mt1">(?<Teaser>.*?)</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="fl w472">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="box1 mt1">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="mt1 ml2 mr2 pt1 pb1">.*?<p class="detail_time" align="right">(?<PubDate>.*?)</p>.*?<div.*?id="contentdetail">(?<ContentBody>.*?)</div>.*?</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Giao duc - categoryId = 10-->
+	<data>
+		<Page>phapluattp.vn</Page>
+		<Source>http://phapluattp.vn/p0c1019/giao-duc.htm</Source>
+		<CategoryID>10</CategoryID>
+		<HttpPrefix>http://phapluattp.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="fl w472 box1 mt1">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="fl ml1 w322 mt1">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="box1. fl">(?<ImagePath>.*?)<a class="fon4" href="(?<Link>[^"<]+)?".*?>(?<Teaser>.*?)</a>.*?<div class="fon9 mt1">(?<Teaser>.*?)</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="fl w472">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="box1 mt1">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="mt1 ml2 mr2 pt1 pb1">.*?<p class="detail_time" align="right">(?<PubDate>.*?)</p>.*?<div.*?id="contentdetail">(?<ContentBody>.*?)</div>.*?</div>]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+</main>

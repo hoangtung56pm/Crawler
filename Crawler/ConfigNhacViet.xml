@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main>
+	<!--Am Nhac - categoryId = 1-->
+	<data>
+		<Page>nhacvietplus.com.vn</Page>
+		<Source>http://nhacvietplus.com.vn/vn/tinnhacviet/index.aspx</Source>
+		<CategoryID>1</CategoryID>
+		<HttpPrefix>http://nhacvietplus.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<td vAlign="top" align="left" width="70%" bgColor="#e6e0f4">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<TD class="other_news_title" align="right" colSpan="2">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<TABLE cellSpacing="3" cellPadding="5" width="100%" border="0">.*?<TR>.*?<TD.*?>.*?<TABLE.*?>.*?<TR.*?>.*?<TD>(?<ImagePath>.*?)</TD>.*?<TD.*?>.*?</TD>.*?</TR>.*?</TABLE>.*?<P class="in_cache_lead">.*?<span.*?>.*?<A.*?href=["|'](?<Link>[^"<]+)?["|']>(?<Title>.*?)</A>.*?<BR>(?<Teaser>.*?)<BR>.*?</span>.*?</P>.*?</TD>.*?</TR>.*?</TABLE>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<td vAlign="top" align="left" width="70%" bgColor="#e6e0f4">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<P style="MARGIN-TOP: 6px; MARGIN-BOTTOM: 6px" align="justify"></P>.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<td colspan="2">.*?<table>.*?<tr>.*?</tr>.*?<tr>.*?</tr>.*?<tr>.*?</tr>.*?<tr>.*?<td.*?>.*?</td>.*?<td.*?>(?<PubDate>.*?)</td>.*?</tr>.*?<tr>.*?<td.*?>.*?</td>.*?<td.*?>(?<ContentBody>.*?)</td>.*?</tr>.*?</table>.*?</td>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<data>
+		<Page>nhacvietplus.com.vn</Page>
+		<Source>http://nhacvietplus.com.vn/vn/tinnhacngoai/index.aspx</Source>
+		<CategoryID>1</CategoryID>
+		<HttpPrefix>http://nhacvietplus.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<td vAlign="top" align="left" width="70%" bgColor="#e6e0f4">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<TD class="other_news_title" align="right" colSpan="2">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<TABLE cellSpacing="3" cellPadding="5" width="100%" border="0">.*?<TR>.*?<TD.*?>.*?<TABLE.*?>.*?<TR.*?>.*?<TD>(?<ImagePath>.*?)</TD>.*?<TD.*?>.*?</TD>.*?</TR>.*?</TABLE>.*?<P class="in_cache_lead">.*?<span.*?>.*?<A.*?href=["|'](?<Link>[^"<]+)?["|']>(?<Title>.*?)</A>.*?<BR>(?<Teaser>.*?)<BR>.*?</span>.*?</P>.*?</TD>.*?</TR>.*?</TABLE>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<td vAlign="top" align="left" width="70%" bgColor="#e6e0f4">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<P style="MARGIN-TOP: 6px; MARGIN-BOTTOM: 6px" align="justify"></P>.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<td colspan="2">.*?<table>.*?<tr>.*?</tr>.*?<tr>.*?</tr>.*?<tr>.*?</tr>.*?<tr>.*?<td.*?>.*?</td>.*?<td.*?>(?<PubDate>.*?)</td>.*?</tr>.*?<tr>.*?<td.*?>.*?</td>.*?<td.*?>(?<ContentBody>.*?)</td>.*?</tr>.*?</table>.*?</td>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+</main>

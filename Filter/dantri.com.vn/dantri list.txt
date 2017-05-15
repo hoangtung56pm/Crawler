@@ -1,0 +1,36 @@
+BEGIN HEADER
+source:http://dantri.com.vn/c20/tintuc-sukien.htm
+CRto:1
+
+BEGIN INFORMATION
+
+BEGIN ACTION
+startafter:
+<div class="nav-wrap">|
+endat:
+<div class="footer box19">|
+pattern:
+ <div class="mt3 clearfix">$1<div class="mr1">$7<a class="fon6" href="$2">$3</a>  
+  <div class="$4">$5</div>
+  <a class="icon-detail fon7" href="$6">Xem tiếp</a>
+ </div>
+ </div>
+ <div class="line1 mt1"></div>|
+
+definition:
+$1:SHORT:TEXT:StripHTMLTags(<img>)
+$2:DETAIL:TEXT:StripHTMLTags()
+$3:TITLE:TEXT:StripHTMLTags()
+$4:MORE1:TEXT:StripHTMLTags()
+$5:SHORT:TEXT:StripHTMLTags():Replace((Dân trí) - ,)
+$6:MORE2:TEXT:StripHTMLTags()
+$7:MORE3:TEXT:StripHTMLTags()
+
+BEGIN DO
+
+nntitle=Dan Tri list
+nntype=list
+nnunique=100040
+nntrack=20101201
+nntop=
+nnbot=

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main>
+	<!--Kinh te - categoryId = 6-->
+	<data>
+		<Page>nld.com.vn</Page>
+		<Source>http://nld.com.vn/p0c1014/kinh-te.htm</Source>
+		<CategoryID>6</CategoryID>
+		<HttpPrefix>http://nld.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="box2">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="fr w206 mr2">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="clearfix">.*?<a.*?>(?<ImagePath>.*?)</a>.*?<h4>.*?<a href="(?<Link>[^"<]+)?">(?<Title>.*?)</a>.*?</h4>.*?<p>(?<PubDate>.*?)</p>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="shadow1">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<script type="text/javascript">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="caption">.*?</div>.*?<h1>.*?</h1>.*?<p class="time">(?<PubDate>.*?)</p>.*?<h3>(?<Teaser>.*?)</h3>.*?<div class="content">(?<ContentBody>.*?)<a.*?class="goback">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Chính trị và xã hội - categoryId = 7-->
+	<data>
+		<Page>nld.com.vn</Page>
+		<Source>http://nld.com.vn/p0c1002/chinh-tri-xa-hoi.htm</Source>
+		<CategoryID>6</CategoryID>
+		<HttpPrefix>http://nld.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="box2">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="fr w206 mr2">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="clearfix">.*?<a.*?>(?<ImagePath>.*?)</a>.*?<h4>.*?<a href="(?<Link>[^"<]+)?">(?<Teaser>.*?)</a>.*?</h4>.*?<p>(?<PubDate>.*?)</p>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="shadow1">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<script type="text/javascript">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="caption">.*?</div>.*?<h1>.*?</h1>.*?<p class="time">(?<PubDate>.*?)</p>.*?<h3>(?<Teaser>.*?)</h3>.*?<div class="content">(?<ContentBody>.*?)<a.*?class="goback">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Thế giới - categoryId = 8-->
+	<data>
+		<Page>nld.com.vn</Page>
+		<Source>http://nld.com.vn/p0c1006/quoc-te.htm</Source>
+		<CategoryID>6</CategoryID>
+		<HttpPrefix>http://nld.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="box2">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="fr w206 mr2">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="clearfix">.*?<a.*?>(?<ImagePath>.*?)</a>.*?<h4>.*?<a href="(?<Link>[^"<]+)?">(?<Teaser>.*?)</a>.*?</h4>.*?<p>(?<PubDate>.*?)</p>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="shadow1">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<script type="text/javascript">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="caption">.*?</div>.*?<h1>.*?</h1>.*?<p class="time">(?<PubDate>.*?)</p>.*?<h3>(?<Teaser>.*?)</h3>.*?<div class="content">(?<ContentBody>.*?)<a.*?class="goback">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<data>
+		<Page>nld.com.vn</Page>
+		<Source>http://nld.com.vn/p0c1006/quoc-te.htm</Source>
+		<CategoryID>6</CategoryID>
+		<HttpPrefix>http://nld.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="box2">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="fr w206 mr2">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="clearfix">.*?<a.*?>(?<ImagePath>.*?)</a>.*?<h4>.*?<a href="(?<Link>[^"<]+)?">(?<Teaser>.*?)</a>.*?</h4>.*?<p>(?<PubDate>.*?)</p>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="shadow1">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<script type="text/javascript">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="caption">.*?</div>.*?<h1>.*?</h1>.*?<p class="time">(?<PubDate>.*?)</p>.*?<h3>(?<Teaser>.*?)</h3>.*?<div class="content">(?<ContentBody>.*?)<a.*?class="goback">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Pháp luật - categoryId = 9-->
+	<data>
+		<Page>nld.com.vn</Page>
+		<Source>http://nld.com.vn/p0c1019/phap-luat.htm</Source>
+		<CategoryID>6</CategoryID>
+		<HttpPrefix>http://nld.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="box2">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="fr w206 mr2">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="clearfix">.*?<a.*?>(?<ImagePath>.*?)</a>.*?<h4>.*?<a href="(?<Link>[^"<]+)?">(?<Teaser>.*?)</a>.*?</h4>.*?<p>(?<PubDate>.*?)</p>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="shadow1">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<script type="text/javascript">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="caption">.*?</div>.*?<h1>.*?</h1>.*?<p class="time">(?<PubDate>.*?)</p>.*?<h3>(?<Teaser>.*?)</h3>.*?<div class="content">(?<ContentBody>.*?)<a.*?class="goback">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Giao duc - categoryId = 10-->
+	<data>
+		<Page>nld.com.vn</Page>
+		<Source>http://nld.com.vn/p0c1017/giao-duc.htm</Source>
+		<CategoryID>10</CategoryID>
+		<HttpPrefix>http://nld.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="box2">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="fr w206 mr2">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="clearfix">.*?<a.*?>(?<ImagePath>.*?)</a>.*?<h4>.*?<a href="(?<Link>[^"<]+)?">(?<Teaser>.*?)</a>.*?</h4>.*?<p>(?<PubDate>.*?)</p>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="shadow1">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<script type="text/javascript">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="caption">.*?</div>.*?<h1>.*?</h1>.*?<p class="time">(?<PubDate>.*?)</p>.*?<h3>(?<Teaser>.*?)</h3>.*?<div class="content">(?<ContentBody>.*?)<a.*?class="goback">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+</main>

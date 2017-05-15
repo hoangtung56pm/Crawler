@@ -1,0 +1,26 @@
+BEGIN HEADER
+source:http://vnexpress.net/GL/Phap-luat/2010/12/3BA24808/
+CRto:1
+
+BEGIN INFORMATION
+
+BEGIN ACTION
+startafter:
+<div id="content">|
+endat:
+<div id="footer">|
+pattern:
+<H2 class=Lead>$1<div class="tag-parent">|
+
+definition:
+$1:DETAIL:TEXT
+$2:MORE:TEXT
+
+BEGIN DO
+
+nntitle=VNExpress detail
+nntype=detail
+nnunique=100031
+nntrack=20110302
+nntop=
+nnbot=

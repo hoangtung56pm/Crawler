@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main>
+	
+	<!--Cong nghe va ung dung - categoryId = 3-->
+	<data>
+		<Page>news.zing.vn</Page>
+		<Source>http://news.zing.vn/xa-hoi/doi-song.html</Source>
+		<CategoryID>105</CategoryID>
+		<HttpPrefix>http://news.zing.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="content-wrap">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<section class="sidebar">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<article class=".*?">.*?<div class="cover" style="background-image: url(?<ImagePath>.*?)">.*?<a href=["|'](?<Link>[^"<]+)?["|']>.*?</a>.*?</div>.*?<header>.*?<h1>.*?<a.*?>(?<Title>.*?)</a>.*?</h1>.*?<p class="summary">(?<Teaser>.*?)</p>.*?</header>.*?</article>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<section id="content" class=".*?">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<section id="discover">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<section id="content" class=".*?">.*?<header>.*?<p class="cate" itemprop="articleSection">.*?</p>.*?<time datetime="(?<PubDate>.*?)">.*?</time>.*?<h1 itemprop="name">.*?</h1>.*?<div class="summary">.*?<p itemprop="description">(?<Teaser>.*?)</p>.*?</div>.*?</header>.*?<div class="content" itemprop="articleBody">(?<ContentBody>.*?)</div>.*?</div>.*?</section>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<data>
+		<Page>www.zing.vn</Page>
+		<Source>http://www.zing.vn/news/sanh-dieu/cong-nghe.htm</Source>
+		<CategoryID>9</CategoryID>
+		<HttpPrefix>http://www.zing.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div id="channelList" class="blocnews02">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="header-other">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="cont09">.*?<div class="cont09im">.*?<a.*?>.*?<img.*?src="(?<ImagePath>[^"<]+)?".*?/></a></div>.*?<div>.*?<p class="cont09title">.*?<a class="lnk02" href=["|'](?<Link>[^"<]+)?["|']>(?<Title>.*?)</p>.*?<p class="cont09txt">(?<Teaser>.*?)</p>.*?<p class="cont09tag">.*?</p>.*?</div>.*?<br class="clear" />.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="colleft">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="static">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="header-article">.*?<div class="datetime">(?<PubDate>.*?)</div>.*?</div>.*?<p class="pHead".*?>(?<Teaser>.*?)</p>(?<ContentBody>.*?)<!--.*?Zone Tag.*?-->]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Giai trí - categoryId = 5-->
+	<data>
+		<Page>www.zing.vn</Page>
+		<Source>http://www.zing.vn/news/am-nhac.htm</Source>
+		<CategoryID>9</CategoryID>
+		<HttpPrefix>http://www.zing.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div id="channelList" class="blocnews02">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="header-other">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="cont09">.*?<div class="cont09im">.*?<a.*?>.*?<img.*?src="(?<ImagePath>[^"<]+)?".*?/></a></div>.*?<div>.*?<p class="cont09title">.*?<a class="lnk02" href=["|'](?<Link>[^"<]+)?["|']>(?<Title>.*?)</p>.*?<p class="cont09txt">(?<Teaser>.*?)</p>.*?<p class="cont09tag">.*?</p>.*?</div>.*?<br class="clear" />.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="colleft">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="static">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="header-article">.*?<div class="datetime">(?<PubDate>.*?)</div>.*?</div>.*?<p class="pHead".*?>(?<Teaser>.*?)</p>(?<ContentBody>.*?)<!--.*?Zone Tag.*?-->]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<data>
+		<Page>www.zing.vn</Page>
+		<Source>http://www.zing.vn/news/phim-anh.htm</Source>
+		<CategoryID>9</CategoryID>
+		<HttpPrefix>http://www.zing.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div id="channelList" class="blocnews02">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="header-other">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="cont09">.*?<div class="cont09im">.*?<a.*?>.*?<img.*?src="(?<ImagePath>[^"<]+)?".*?/></a></div>.*?<div>.*?<p class="cont09title">.*?<a class="lnk02" href=["|'](?<Link>[^"<]+)?["|']>(?<Title>.*?)</p>.*?<p class="cont09txt">(?<Teaser>.*?)</p>.*?<p class="cont09tag">.*?</p>.*?</div>.*?<br class="clear" />.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="colleft">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="static">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="header-article">.*?<div class="datetime">(?<PubDate>.*?)</div>.*?</div>.*?<p class="pHead".*?>(?<Teaser>.*?)</p>(?<ContentBody>.*?)<!--.*?Zone Tag.*?-->]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Chính trị và xã hội - categoryId = 7-->
+	<data>
+		<Page>www.zing.vn</Page>
+		<Source>http://www.zing.vn/news/xa-hoi.htm</Source>
+		<CategoryID>9</CategoryID>
+		<HttpPrefix>http://www.zing.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div id="channelList" class="blocnews02">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="header-other">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="cont09">.*?<div class="cont09im">.*?<a.*?>.*?<img.*?src="(?<ImagePath>[^"<]+)?".*?/></a></div>.*?<div>.*?<p class="cont09title">.*?<a class="lnk02" href=["|'](?<Link>[^"<]+)?["|']>(?<Title>.*?)</p>.*?<p class="cont09txt">(?<Teaser>.*?)</p>.*?<p class="cont09tag">.*?</p>.*?</div>.*?<br class="clear" />.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="colleft">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="static">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="header-article">.*?<div class="datetime">(?<PubDate>.*?)</div>.*?</div>.*?<p class="pHead".*?>(?<Teaser>.*?)</p>(?<ContentBody>.*?)<!--.*?Zone Tag.*?-->]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Thế giới - categoryId = 8-->
+	<data>
+		<Page>www.zing.vn</Page>
+		<Source>http://www.zing.vn/news/the-gioi.htm</Source>
+		<CategoryID>9</CategoryID>
+		<HttpPrefix>http://www.zing.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div id="channelList" class="blocnews02">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="header-other">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="cont09">.*?<div class="cont09im">.*?<a.*?>.*?<img.*?src="(?<ImagePath>[^"<]+)?".*?/></a></div>.*?<div>.*?<p class="cont09title">.*?<a class="lnk02" href=["|'](?<Link>[^"<]+)?["|']>(?<Title>.*?)</p>.*?<p class="cont09txt">(?<Teaser>.*?)</p>.*?<p class="cont09tag">.*?</p>.*?</div>.*?<br class="clear" />.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="colleft">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="static">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="header-article">.*?<div class="datetime">(?<PubDate>.*?)</div>.*?</div>.*?<p class="pHead".*?>(?<Teaser>.*?)</p>(?<ContentBody>.*?)<!--.*?Zone Tag.*?-->]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Pháp luật - categoryId = 9-->
+	<data>
+		<Page>www.zing.vn</Page>
+		<Source>http://www.zing.vn/news/hinh-su.htm</Source>
+		<CategoryID>9</CategoryID>
+		<HttpPrefix>http://www.zing.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div id="channelList" class="blocnews02">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div class="header-other">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="cont09">.*?<div class="cont09im">.*?<a.*?>.*?<img.*?src="(?<ImagePath>[^"<]+)?".*?/></a></div>.*?<div>.*?<p class="cont09title">.*?<a class="lnk02" href=["|'](?<Link>[^"<]+)?["|']>(?<Title>.*?)</p>.*?<p class="cont09txt">(?<Teaser>.*?)</p>.*?<p class="cont09tag">.*?</p>.*?</div>.*?<br class="clear" />.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div class="colleft">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="static">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="header-article">.*?<div class="datetime">(?<PubDate>.*?)</div>.*?</div>.*?<p class="pHead".*?>(?<Teaser>.*?)</p>(?<ContentBody>.*?)<!--.*?Zone Tag.*?-->]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>	
+		
+</main>

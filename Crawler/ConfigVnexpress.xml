@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main>
+	<!--Am Nhac - categoryId = 1-->
+  <data>
+    <Page>VnExpress.net</Page>
+    <Source>http://vnexpress.net/tin-tuc/khoa-hoc/ky-thuat-moi</Source>
+    <CategoryID>1</CategoryID>
+    <HttpPrefix>http://vnexpress.net</HttpPrefix>
+    <ListStartAfter>
+      <![CDATA[<div class="folder-top">.*]]>
+    </ListStartAfter>
+    <ListEndAt>
+      <![CDATA[<script type="text/javascript" language="javascript">.*]]>
+    </ListEndAt>
+    <ParternList>
+      <![CDATA[<div class="folder-news">.*?<div class="left-fnews">.*?<a class="aImg130" href=".*?">.*?<img src="(?<ImagePath>[^"<]+)?" alt=".*?" class="img-subject">.*?</a>.*?</div>.*?<div class="right-fnews">.*?<h2 class="h2Title-14">.*?<a class="link-title14" href="(?<Link>[^"<]+)?">(?<Title>.*?)</a>.*?</h2>.*?<h3 class="h3Lead">(?<Teaser>.*?)</h3>.*?</div>.*?</div>]]>
+    </ParternList>
+    <DetailStartAfter>
+      <![CDATA[<div id="content".*?>.*]]>
+    </DetailStartAfter>
+    <DetailEndAt>
+      <![CDATA[<div id="footer">.*]]>
+    </DetailEndAt>
+    <PatternDetail><![CDATA[<div class="cxtLeft">.*?<span class="spanTime">(?<PubDate>.*?)</span>.*?<h2 class="Lead">(?<Teaser>.*?)</h2>.*?<div class="fck_detail">(?<ContentBody>.*?)</div>.*?</div>]]></PatternDetail>
+    <LinkCommonPartern>
+      <![CDATA[href="(?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?".*?>(?!<)(?<LinkText>[^"<]+)</a>]]>
+    </LinkCommonPartern>
+  </data>
+	<!--Cong nghe va ung dung - categoryId = 3-->
+	<data>
+		<Page>VnExpress.net</Page>
+		<Source>http://vnexpress.net/GL/Vi-tinh/</Source>
+		<CategoryID>3</CategoryID>
+		<HttpPrefix>http://vnexpress.net</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="folder-top">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<script type="text/javascript" language="javascript">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="folder-news">.*?<a href=".*?"><img class=".*?" src="(?<ImagePath>[^"<]+)?".*?/></a>.*?<p><a href="(?<Link>[^"<]+)?" class="link-title">(?<Teaser>.*?)</a>.*?</label></p>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="content">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div id="footer">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="fr">(?<PubDate>.*?)</div>.*?<H2 class=Lead.*?>(?<Teaser>.*?)</H2>(?<ContentBody>.*?)<div class="tag-parent">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href="(?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?".*?>(?!<)(?<LinkText>[^"<]+)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Giai trí - categoryId = 5-->
+	<data>
+		<Page>VnExpress.net</Page>
+		<Source>http://vnexpress.net/gl/van-hoa/</Source>
+		<CategoryID>5</CategoryID>
+		<HttpPrefix>http://vnexpress.net</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="folder-top">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<script type="text/javascript" language="javascript">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="folder-news">.*?<a href=".*?"><img class=".*?" src="(?<ImagePath>[^"<]+)?".*?/></a>.*?<p><a href="(?<Link>[^"<]+)?" class="link-title">(?<Teaser>.*?)</a>.*?</label></p>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="content">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div id="footer">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="fr">(?<PubDate>.*?)</div>.*?<H2 class=Lead.*?>(?<Teaser>.*?)</H2>(?<ContentBody>.*?)<div class="tag-parent">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href="(?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?".*?>(?!<)(?<LinkText>[^"<]+)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Kinh te - categoryId = 6-->
+	<data>
+		<Page>VnExpress.net</Page>
+		<Source>http://vnexpress.net/GL/Kinh-doanh/</Source>
+		<CategoryID>5</CategoryID>
+		<HttpPrefix>http://vnexpress.net</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="folder-top">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<script type="text/javascript" language="javascript">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="clearfix">.*?<a.*?>(?<ImagePath>.*?)</a>.*?<h4>.*?<a href="(?<Link>[^"<]+)?">(?<Teaser>.*?)</a>.*?</h4>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="content">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div id="footer">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="fr">(?<PubDate>.*?)</div>.*?<H2 class=Lead.*?>(?<Teaser>.*?)</H2>(?<ContentBody>.*?)<div class="tag-parent">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href="(?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?".*?>(?!<)(?<LinkText>[^"<]+)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Chính trị và xã hội - categoryId = 7-->
+	<data>
+		<Page>VnExpress.net</Page>
+		<Source>http://vnexpress.net/GL/Xa-hoi/</Source>
+		<CategoryID>5</CategoryID>
+		<HttpPrefix>http://vnexpress.net</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="folder-top">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<script type="text/javascript" language="javascript">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="folder-news">.*?<a href=".*?"><img class=".*?" src="(?<ImagePath>[^"<]+)?".*?/></a>.*?<p><a href="(?<Link>[^"<]+)?" class="link-title">(?<Teaser>.*?)</a>.*?</label></p>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="content">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div id="footer">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="fr">(?<PubDate>.*?)</div>.*?<H2 class=Lead.*?>(?<Teaser>.*?)</H2>(?<ContentBody>.*?)<div class="tag-parent">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href="(?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?".*?>(?!<)(?<LinkText>[^"<]+)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Thế giới - categoryId = 8-->
+	<data>
+		<Page>VnExpress.net</Page>
+		<Source>http://vnexpress.net/GL/The-gioi/</Source>
+		<CategoryID>5</CategoryID>
+		<HttpPrefix>http://vnexpress.net</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="folder-top">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<script type="text/javascript" language="javascript">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="folder-news">.*?<a href=".*?"><img class=".*?" src="(?<ImagePath>[^"<]+)?".*?/></a>.*?<p><a href="(?<Link>[^"<]+)?" class="link-title">(?<Teaser>.*?)</a>.*?</label></p>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="content">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div id="footer">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="fr">(?<PubDate>.*?)</div>.*?<H2 class=Lead.*?>(?<Teaser>.*?)</H2>(?<ContentBody>.*?)<div class="tag-parent">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href="(?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?".*?>(?!<)(?<LinkText>[^"<]+)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Pháp luật - categoryId = 9-->
+	<data>
+		<Page>VnExpress.net</Page>
+		<Source>http://vnexpress.net/GL/Phap-luat/</Source>
+		<CategoryID>5</CategoryID>
+		<HttpPrefix>http://vnexpress.net</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="folder-top">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<script type="text/javascript" language="javascript">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="folder-news">.*?<a href=".*?"><img class=".*?" src="(?<ImagePath>[^"<]+)?".*?/></a>.*?<p><a href="(?<Link>[^"<]+)?" class="link-title">(?<Teaser>.*?)</a>.*?</label></p>.*?<p>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="content">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div id="footer">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="fr">(?<PubDate>.*?)</div>.*?<H2 class=Lead.*?>(?<Teaser>.*?)</H2>(?<ContentBody>.*?)<div class="tag-parent">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href="(?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?".*?>(?!<)(?<LinkText>[^"<]+)</a>]]>
+		</LinkCommonPartern>
+	</data>	
+	
+</main>

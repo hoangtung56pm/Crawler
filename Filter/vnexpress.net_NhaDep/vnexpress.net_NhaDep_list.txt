@@ -1,0 +1,28 @@
+BEGIN HEADER
+source:http://nhadep.vnexpress.net/GL/Nha-dep/Khong-gian-song/
+CRto:1
+
+BEGIN INFORMATION
+
+BEGIN ACTION
+startafter:
+<div id="navigator">|
+endat:
+<div class='TS-top1'>|
+pattern:
+    	               	                	<div class='PT-folder'>$1<div class='PT-folder-body'>			<div class='PT-folder-body1'><a href="$2"$4 class="link-title">$3</a>			</div>			<div class='CT-folder-body2'>$5<div class='PT-solid'></div><div class='PT-left-ct'>|
+
+definition:
+$1:SHORT:TEXT:StripHTMLTags(<img>)
+$2:DETAIL:TEXT:StripHTMLTags()
+$3:TITLE:TEXT:StripHTMLTags()
+$4:MORE:TEXT:StripHTMLTags()
+$5:SHORT:TEXT:StripHTMLTags()
+BEGIN DO
+
+nntitle=VNExpress NhaDep list
+nntype=list
+nnunique=100120
+nntrack=20101201
+nntop=
+nnbot=

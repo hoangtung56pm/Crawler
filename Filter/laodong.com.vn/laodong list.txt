@@ -1,0 +1,31 @@
+BEGIN HEADER
+source:http://laodong.com.vn/Chuyen-Muc-Moi/Bat-dong-san/233
+CRto:1
+
+BEGIN INFORMATION
+
+BEGIN ACTION
+startafter:
+<div id="Main" class="Middle">|
+endat:
+<div class="Footer">|
+pattern:
+<div class="TopNew">$1<p class="Title">$6href="$2"$7class="Invai">$3<p class="DateNewDetail">$4<p style="text-align: justify;">$5<div class="ClearBoth">|
+
+definition:
+$1:SHORT:TEXT:StripHTMLTags(<img>)
+$2:DETAIL:TEXT:StripHTMLTags()
+$3:TITLE:TEXT:StripHTMLTags()
+$4:MORE:TEXT
+$5:SHORT:TEXT:StripHTMLTags():Replace((LĐO) - ,)
+$6:MORE:TEXT
+$7:MORE:TEXT
+
+BEGIN DO
+
+nntitle=Lao Dong list
+nntype=list
+nnunique=100060
+nntrack=20101202
+nntop=
+nnbot=

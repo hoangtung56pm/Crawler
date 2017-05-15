@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main>
+	<!--Am Nhac - categoryId = 1-->
+	<data>
+		<Page>2sao.vietnamnet.vn</Page>
+		<Source>http://2sao.vietnamnet.vn/p0c1001/Am-nhac.vnn</Source>
+		<CategoryID>1</CategoryID>
+		<HttpPrefix>http://2sao.vietnamnet.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div id="listNews">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_ctBLeft_dst_Pager1_pager" class="pager">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div title=".*?">(?<ImagePath>.*?)<h2.*?>.*?<a title=".*?".*?href=["|'](?<Link>[^"<]+)?["|']>(?<Title>.*?)</a>.*?</h2>.*?<h4.*?>(?<PubDate>.*?)</h4>.*?<p.*?>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="container" class="bodyConent bg_trang">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="news2" style="position:relative">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="detail_date">(?<PubDate>.*?)</div>.*?<div class="spshare">.*?<h2 class="detail_sapo">(?<Teaser>.*?)</h2>.*?</div>.*?<div class="detail_content">(?<ContentBody>.*?)</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<data>
+		<Page>2sao.vietnamnet.vn</Page>
+		<Source>http://2sao.vietnamnet.vn/p0c1000/Sao.vnn</Source>
+		<CategoryID>1</CategoryID>
+		<HttpPrefix>http://2sao.vietnamnet.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div id="listNews">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_ctBLeft_dst_Pager1_pager" class="pager">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div title=".*?">(?<ImagePath>.*?)<h2.*?>.*?<a title=".*?".*?href=["|'](?<Link>[^"<]+)?["|']>(?<Title>.*?)</a>.*?</h2>.*?<h4.*?>(?<PubDate>.*?)</h4>.*?<p.*?>(?<Teaser>.*?)</p>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="container" class="bodyConent bg_trang">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="news2" style="position:relative">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[<div class="detail_date">(?<PubDate>.*?)</div>.*?<div class="spshare">.*?<h2 class="detail_sapo">(?<Teaser>.*?)</h2>.*?</div>.*?<div class="detail_content">(?<ContentBody>.*?)</div>]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+</main>

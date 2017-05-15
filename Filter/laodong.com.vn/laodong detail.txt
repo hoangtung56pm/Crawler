@@ -1,0 +1,25 @@
+BEGIN HEADER
+source:http://laodong.com.vn/Tin-Tuc/Luyen-ban-phao-ngay-Dai-le/12602
+CRto:1
+
+BEGIN INFORMATION
+
+BEGIN ACTION
+startafter:
+<div id="Main" class="Middle">|
+endat:
+<div class="Footer">|
+pattern:
+<div class="NewsContent">$1<div class="BoxTopNewDetail">|
+
+definition:
+$1:DETAIL:TEXT:Replace((LÐO) –,)
+
+BEGIN DO
+
+nntitle=Lao Dong Detail
+nntype=detail
+nnunique=100061
+nntrack=20101201
+nntop=
+nnbot=

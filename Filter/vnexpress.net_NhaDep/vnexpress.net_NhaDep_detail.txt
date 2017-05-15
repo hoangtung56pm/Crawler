@@ -1,0 +1,28 @@
+BEGIN HEADER
+source:http://nhadep.vnexpress.net/gl/nha-dep/khong-gian-song/2011/03/nhip-dieu-vai-trong-thiet-ke-noi-that/
+CRto:1
+
+BEGIN INFORMATION
+
+BEGIN ACTION
+startafter:
+<div id="content">|
+endat:
+<div id="footer">|
+pattern:
+<div class="PT-top-c3">
+					<H1 class=Title>$1</H1>
+<H2 class=Lead>$2<div class="TS-down2"></div>|
+
+definition:
+$1:MORE:TEXT
+$2:DETAIL:TEXT
+
+BEGIN DO
+
+nntitle=VNExpress NhaDep detail
+nntype=detail
+nnunique=100121
+nntrack=20110301
+nntop=
+nnbot=

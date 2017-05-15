@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main>
+	<!--Cong nghe va ung dung - categoryId = 3-->
+	<data>
+		<Page>vietnamnet.vn</Page>
+		<Source>http://vietnamnet.vn/vn/cong-nghe-thong-tin-vien-thong/index.html</Source>
+		<CategoryID>3</CategoryID>
+		<HttpPrefix>http://vietnamnet.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="phantrai">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_pnlOtherNews">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="item">.*?<div class="item_img boder-img">(?<ImagePath>.*?)</div>.*?<a.*?href=["|'](?<Link>[^"<]+)?["|'].*?>(?<Title>.*?)</a>.*?<div class="lead">(?<Teaser>.*?)</div>.*?<div class="clear">.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div.*?id="article".*?>.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div id="article-others" class="row">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[ <div id="date" class="content_date">(?<PubDate>.*?)</div>.*?<div id="content".*?class="article_content">(?<ContentBody>.*?)<div id="Div1" class="article_content">]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Thế giới - categoryId = 8-->
+	<data>
+		<Page>vietnamnet.vn</Page>
+		<Source>http://vietnamnet.vn/vn/quoc-te/index.html</Source>
+		<CategoryID>8</CategoryID>
+		<HttpPrefix>http://vietnamnet.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div id="list-cate-new">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="paging">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="item">.*?<div class="item_img boder-img">(?<ImagePath>.*?)</div>.*?<a.*?href=["|'](?<Link>[^"<]+)?["|'].*?>(?<Teaser>.*?)</a>.*?<div class="lead">(?<Teaser>.*?)</div>.*?<div class="clear">.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div.*?id="article".*?>.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div id="article-others" class="row">.*]]>
+		</DetailEndAt>
+		<PatternDetail>
+			<![CDATA[ <div id="date" class="content_date">(?<PubDate>.*?)</div>.*?<div id="content".*?class="article_content">(?<ContentBody>.*?)<div id="Div1" class="article_content">]]>
+		</PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>	
+</main>

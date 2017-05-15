@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main>
+
+	<!--Cong nghe va ung dung - categoryId = 3-->
+	
+	<data>
+		<Page>DanTri.com.vn</Page>
+		<Source>http://dantri.com.vn/giao-duc-khuyen-hoc.htm</Source>
+		<CategoryID>3</CategoryID>
+		<HttpPrefix>http://dantri.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="fl wid470">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_IDContent_List1_divDaDang" class="box21 mt5 clearfix">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="mt3 clearfix">(?<ImagePath>.*?)<div class="mr1">.*?<a.*?class="fon6" href="(?<Link>[^"<]+)?".*?>(?<Title>.*?)</a>.*?<div class="fon5 .*? fl">(?<Teaser>.*?)</div>.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="ctl00_IDContent_ctl00_divContent">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="emailprint">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="box26">.*?<span class="fr fon7 mr2">.*?<meta itemprop="datePublished" content=".*?"/>(?<PubDate>.*?)</span>.*?</div>.*?<p class="detail_subtitle">.*?</p>.*?<h2 class="fon33 mt1">.*?[-| ].*?(?<Teaser>.*?)</h2>.*?<div class="fon34 mt3 mr2 fon43">(?<ContentBody>.*?)<div class="news-tag">]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[<a href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	
+	<!--Giai trí - categoryId = 5-->
+	
+	<data>
+		<Page>DanTri.com.vn</Page>
+		<Source>http://dantri.com.vn/c23/giaitri.htm</Source>
+		<CategoryID>5</CategoryID>
+		<HttpPrefix>http://dantri.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="fl wid470">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_IDContent_List1_divDaDang" class="box21 mt5 clearfix">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="mt3 clearfix">(?<ImagePath>.*?)<div class="mr1">.*?<a class="fon6" href="(?<Link>[^"<]+)?">(?<Title>.*?)</a>.*?<div class="fon5 wid324 fl">(?<Teaser>.*?)</div>.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="ctl00_IDContent_ctl00_divContent">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="emailprint">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="box26">.*?<span class="fr fon7 mr2">(?<PubDate>.*?)</span></div>.*?<div class="fon31 mt1">.*?</div>.*?<div class="fon33 mt1">(?<Teaser>.*?)</div>.*?<div class="fon34 mt3 mr2 fon43">(?<ContentBody>.*?)</div>]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[<a href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	
+	<!--Kinh te - categoryId = 6-->
+	
+	<data>
+		<Page>DanTri.com.vn</Page>
+		<Source>http://dantri.com.vn/c76/kinhdoanh.htm</Source>
+		<CategoryID>5</CategoryID>
+		<HttpPrefix>http://dantri.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="fl wid470">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_IDContent_List1_divDaDang" class="box21 mt5 clearfix">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="mt3 clearfix">(?<ImagePath>.*?)<div class="mr1">.*?<a class="fon6" href="(?<Link>[^"<]+)?">(?<Title>.*?)</a>.*?<div class="fon5 wid324 fl">(?<Teaser>.*?)</div>.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="ctl00_IDContent_ctl00_divContent">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="emailprint">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="box26">.*?<span class="fr fon7 mr2">(?<PubDate>.*?)</span></div>.*?<div class="fon31 mt1">.*?</div>.*?<div class="fon33 mt1">(?<Teaser>.*?)</div>.*?<div class="fon34 mt3 mr2 fon43">(?<ContentBody>.*?)</div>]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[<a href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	
+	<!--Chính trị và xã hội - categoryId = 7-->
+	
+	<data>
+		<Page>DanTri.com.vn</Page>
+		<Source>http://dantri.com.vn/c20/xa-hoi.htm</Source>
+		<CategoryID>7</CategoryID>
+		<HttpPrefix>http://dantri.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="fl wid470">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_IDContent_List1_divDaDang" class="box21 mt5 clearfix">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="mt3 clearfix">(?<ImagePath>.*?)<div class="mr1">.*?<a class="fon6" href="(?<Link>[^"<]+)?">(?<Title>.*?)</a>.*?<div class="fon5 wid324 fl">(?<Teaser>.*?)</div>.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="ctl00_IDContent_ctl00_divContent">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="emailprint">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="box26">.*?<span class="fr fon7 mr2">(?<PubDate>.*?)</span></div>.*?<div class="fon31 mt1">.*?</div>.*?<div class="fon33 mt1">(?<Teaser>.*?)</div>.*?<div class="fon34 mt3 mr2 fon43">(?<ContentBody>.*?)</div>]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[<a href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>	
+	
+	<!--Thế giới - categoryId = 8-->
+	
+	<data>
+		<Page>DanTri.com.vn</Page>
+		<Source>http://dantri.com.vn/c36/thegioi.htm</Source>
+		<CategoryID>8</CategoryID>
+		<HttpPrefix>http://dantri.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="fl wid470">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_IDContent_List1_divDaDang" class="box21 mt5 clearfix">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="mt3 clearfix">(?<ImagePath>.*?)<div class="mr1">.*?<a class="fon6" href="(?<Link>[^"<]+)?">(?<Title>.*?)</a>.*?<div class="fon5 wid324 fl">(?<Teaser>.*?)</div>.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="ctl00_IDContent_ctl00_divContent">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="emailprint">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="box26">.*?<span class="fr fon7 mr2">(?<PubDate>.*?)</span></div>.*?<div class="fon31 mt1">.*?</div>.*?<div class="fon33 mt1">(?<Teaser>.*?)</div>.*?<div class="fon34 mt3 mr2 fon43">(?<ContentBody>.*?)</div>]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[<a href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>	
+	
+	<!--Pháp luật - categoryId = 9-->
+	
+	<data>
+		<Page>DanTri.com.vn</Page>
+		<Source>http://dantri.com.vn/c20s170/skphapluat/trang-1.htm</Source>
+		<CategoryID>9</CategoryID>
+		<HttpPrefix>http://dantri.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="fl wid470">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_IDContent_List1_divDaDang" class="box21 mt5 clearfix">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="mt3 clearfix">(?<ImagePath>.*?)<div class="mr1">.*?<a class="fon6" href="(?<Link>[^"<]+)?">(?<Title>.*?)</a>.*?<div class="fon5 wid324 fl">(?<Teaser>.*?)</div>.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="ctl00_IDContent_ctl00_divContent">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="emailprint">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="box26">.*?<span class="fr fon7 mr2">(?<PubDate>.*?)</span></div>.*?<div class="fon31 mt1">.*?</div>.*?<div class="fon33 mt1">(?<Teaser>.*?)</div>.*?<div class="fon34 mt3 mr2 fon43">(?<ContentBody>.*?)</div>]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[<a href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+	<!--Giao duc - categoryId = 10-->
+	<data>
+		<Page>DanTri.com.vn</Page>
+		<Source>http://dantri.com.vn/c25/giaoduc.htm</Source>
+		<CategoryID>10</CategoryID>
+		<HttpPrefix>http://dantri.com.vn</HttpPrefix>
+		<ListStartAfter>
+			<![CDATA[<div class="fl wid470">.*]]>
+		</ListStartAfter>
+		<ListEndAt>
+			<![CDATA[<div id="ctl00_IDContent_List1_divDaDang" class="box21 mt5 clearfix">.*]]>
+		</ListEndAt>
+		<ParternList>
+			<![CDATA[<div class="mt3 clearfix">(?<ImagePath>.*?)<div class="mr1">.*?<a class="fon6" href="(?<Link>[^"<]+)?">(?<Title>.*?)</a>.*?<div class="fon5 wid324 fl">(?<Teaser>.*?)</div>.*?</div>.*?</div>]]>
+		</ParternList>
+		<DetailStartAfter>
+			<![CDATA[<div id="ctl00_IDContent_ctl00_divContent">.*]]>
+		</DetailStartAfter>
+		<DetailEndAt>
+			<![CDATA[<div class="emailprint">.*]]>
+		</DetailEndAt>
+		<PatternDetail><![CDATA[<div class="box26">.*?<span class="fr fon7 mr2">(?<PubDate>.*?)</span></div>.*?<div class="fon31 mt1">.*?</div>.*?<div class="fon33 mt1">(?<Teaser>.*?)</div>.*?<div class="fon34 mt3 mr2 fon43">(?<ContentBody>.*?)</div>]]></PatternDetail>
+		<LinkCommonPartern>
+			<![CDATA[<a href=["|'](?!javascript:)(?=[^"]*[A-Z])(?<LinkUrl>[^"<]+)?["|']>(?<LinkText>.*?)</a>]]>
+		</LinkCommonPartern>
+	</data>
+</main>
